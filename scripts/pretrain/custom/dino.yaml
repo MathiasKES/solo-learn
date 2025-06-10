@@ -42,14 +42,14 @@ scheduler:
   name: "warmup_cosine"
 checkpoint:
   enabled: True
-  dir: "trained_models"
+  dir: "/work3/s234843/02466-Project/trained_models"
   frequency: 1
 auto_resume:
   enabled: True
 
 # overwrite PL stuff
 max_epochs: 400
-devices: [0, 1]
+devices: [0]
 sync_batchnorm: True
 accelerator: "gpu"
 strategy: "ddp"
