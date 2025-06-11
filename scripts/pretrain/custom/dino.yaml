@@ -25,7 +25,7 @@ momentum:
   final_tau: 1.0
 data:
   dataset: "custom"
-  train_path: "/work3/s234843/02466-Project/dataset/fluorescent/without_masks_256"
+  train_path: "/work3/s234843/02466-Project/dataset/without_masks_256"
   format: "image_folder"
   num_workers: 8
 optimizer:
