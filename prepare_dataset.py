@@ -2,9 +2,9 @@ from pathlib import Path
 from PIL import Image
 import re, tqdm
 
-input_dirs = [Path("/work3/s234843/02466-Project/dataset/fluorescent/without_masks"),
-             Path("/work3/s234843/02466-Project/dataset/broadband/without_masks")]
-output_dir = Path("/work3/s234843/02466-Project/dataset/without_masks_512/combined")
+input_dirs = [Path("/work3/s234843/02466-Project/dataset/fluorescent/without_masks"),]
+#             Path("/work3/s234843/02466-Project/dataset/broadband/without_masks")]
+output_dir = Path("/work3/s234843/02466-Project/dataset/without_masks_512_W/combined")
 
 for i in range(len(input_dirs)):
     output_dir.mkdir(parents=True, exist_ok=True)
