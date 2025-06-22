@@ -11,7 +11,7 @@ hydra:
   run:
     dir: .
 
-name: "dino"
+name: "DINO_W 512"
 method: "dino"
 backbone:
   name: "resnet18"
