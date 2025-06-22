@@ -6,8 +6,8 @@
 #BSUB -R "span[hosts=1]"
 #BSUB -R "rusage[mem=8GB]"
 #BSUB -W 24:00
-#BSUB -oo gpuout/dino/train_dino_%J.out
-#BSUB -eo gpuout/dino/train_dino_%J.err
+#BSUB -oo ~/02466-Project/gpuout/dino/train_dino_%J.out
+#BSUB -eo ~/02466-Project/gpuout/dino/train_dino_%J.err
 
 module load cuda/12.8.1
 
