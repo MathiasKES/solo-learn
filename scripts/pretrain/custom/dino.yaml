@@ -26,7 +26,7 @@ momentum:
 data:
   dataset: "custom"
   train_path: "/work3/s234843/02466-Project/dataset/without_masks_512"
-  format: "dali"
+  format: "image_folder"
   num_workers: 8
 optimizer:
   name: "lars"

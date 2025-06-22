@@ -14,6 +14,6 @@ module load cuda/12.8.1
 # Activate conda environment
 source /work3/s234843/init_project.sh
 
-CUDA_VISIBLE_DEVICES=0,1 taskset -c 0-15,32-47 python solo-learn/main_pretrain.py \
+CUDA_VISIBLE_DEVICES=0,1 python solo-learn/main_pretrain.py \
     --config-path scripts/pretrain/custom/ \
     --config-name dino.yaml
