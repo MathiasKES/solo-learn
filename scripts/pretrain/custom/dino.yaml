@@ -25,8 +25,8 @@ momentum:
   final_tau: 1.0
 data:
   dataset: "custom"
-  train_path: "/work3/s234843/02466-Project/dataset/without_masks_256"
-  format: "image_folder"
+  train_path: "/work3/s234843/02466-Project/dataset/without_masks_512"
+  format: "dali"
   num_workers: 8
 optimizer:
   name: "lars"
@@ -49,7 +49,7 @@ auto_resume:
 
 # overwrite PL stuff
 max_epochs: 400
-devices: [0]
+devices: [0, 1]
 sync_batchnorm: True
 accelerator: "gpu"
 strategy: "ddp"
